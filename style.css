@@ -50,9 +50,9 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 24px;
   color: #3e424b;
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 }
 
 .header h1 {
@@ -60,6 +60,7 @@ h2 {
 }
 
 .header h2 {
+  font-size: 18px;
   color: #fff;
   margin-bottom: 0;
   text-align: left;
@@ -154,4 +155,19 @@ li {
 .container .video-container iframe {
   margin: 20px auto;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 780px) {
+  .slider {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .slides {
+    width: 100%;
+  }
+  .container .subscription-form {
+    width: 100%;
+  }
+.header h2 {
+  font-size:10px;
 }

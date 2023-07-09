@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #fff;
   color: #fff;
 }
 
@@ -16,16 +16,52 @@ body {
   border: 1px solid white;
   display: flex;
   flex-flow: column;
+  /* background-color: #000; */
+}
+
+.section-1 {
+  background-color: #000;
 }
 
 .section .section-child {
   display: flex;
-  margin: auto 400px;
+  margin: auto 0;
   flex-flow: col;
-  gap: 20px;
+  /* gap: 20px; */
   height: fit-content;
   border: 1px solid red;
   justify-content: space-between;
+  background-color: #000;
+}
+
+.section-3 .section-child {
+  background-color: #fff;
+}
+
+.section-child .empty {
+  width: 70px;
+  background-color: #fff;
+}
+
+.img-cnt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.section-child .section-3-left {
+  border-radius: 0 50px 50px 0;
+  border: 1px solid yellow;
+  width: 100%;
+  background-color: #000;
+}
+
+.section-child .section-3-right {
+  border-radius: 50px 0 0 50px;
+  border: 1px solid yellow;
+  width: 100%;
+  background-color: #000;
 }
 
 .section-child .section-1-left {
@@ -56,4 +92,5 @@ body {
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  background-color: #000;
 }

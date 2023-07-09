@@ -15,7 +15,7 @@ body {
   height: 90vh;
   border: 1px solid white;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
 }
 
 .section .section-child {
@@ -24,6 +24,8 @@ body {
   flex-flow: col;
   gap: 20px;
   height: fit-content;
+  border: 1px solid red;
+  justify-content: space-between;
 }
 
 .section-child .section-1-left {
@@ -39,6 +41,12 @@ body {
 
 .section-1 div {
   border: 1px solid blue;
+}
+
+.section-3 .section-child {
+  border: 1px solid blue;
+  display: flex;
+  flex-flow: row;
 }
 
 .scroll-next {

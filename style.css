@@ -16,7 +16,6 @@ body {
   border: 1px solid white;
   display: flex;
   flex-flow: column;
-  /* background-color: #000; */
 }
 
 .section-1 {
@@ -27,11 +26,14 @@ body {
   display: flex;
   margin: auto 0;
   flex-flow: col;
-  /* gap: 20px; */
   height: fit-content;
   border: 1px solid red;
   justify-content: space-between;
   background-color: #000;
+}
+
+.section-1 .section-child {
+  margin: auto 300px;
 }
 
 .section-3 .section-child {

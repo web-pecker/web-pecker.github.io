@@ -15,7 +15,9 @@ body {
   height: 90vh;
   border: 1px solid white;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-1 {
@@ -24,16 +26,12 @@ body {
 
 .section .section-child {
   display: flex;
-  margin: auto 0;
-  flex-flow: col;
-  height: fit-content;
-  border: 1px solid red;
+  flex-flow: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  gap: 150px;
   background-color: #000;
-}
-
-.section-1 .section-child {
-  margin: auto 300px;
 }
 
 .section-3 .section-child {
@@ -68,17 +66,30 @@ body {
 
 .section-child .section-1-left {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.section-child .section-1-right {
-  font-size: 27px;
+.section-child .section-1-left svg {
+	width: 250px;
+	margin-bottom: 46px;
 }
 
-.section-1 div {
-  border: 1px solid blue;
+.section-child .section-1-left h1 {
+    font-size: 47px;
+    font-weight: 100;
+    width: 100%;
+}
+
+.section-child .section-1-left h3 {
+    font-size: 27px;
+    font-weight: 100;
+    width: 100%;
+}
+
+.section-child .section-1-right {
+  font-size: 27px;
 }
 
 .section-3 .section-child {

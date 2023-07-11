@@ -16,27 +16,40 @@ body {
   border-bottom: 1px solid white;
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 50px 0;
 }
 
 .section-1 {
   background-color: #000;
 }
 
-.section .section-child {
+.section-child {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 150px;
   gap: 150px;
-  background-color: #000;
   height: 250px;
 }
 
 .section-3 .section-child {
-  background-color: #fff;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.section.section-3.section-child {
+    height: 90vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
 }
 
 .section-child .empty {
@@ -51,18 +64,43 @@ body {
   flex-flow: column;
 }
 
-.section-child .section-3-left {
+.img-cnt svg {
+  height: 100px;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.section-3 h2, h3 {
+  font-weight: 100;
+}
+
+.section-child .section-3-left, .section-3-right {
   border-radius: 0 50px 50px 0;
-  border: 1px solid yellow;
-  width: 100%;
-  background-color: #000;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-child .section-3-left .avail-cnt {
+	display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.section-child .section-3-left .avail-cnt h3 {
+    padding: 10px 0;
 }
 
 .section-child .section-3-right {
-  border-radius: 50px 0 0 50px;
-  border: 1px solid yellow;
-  width: 100%;
-  background-color: #000;
+	 border-radius: 50px 0 0 50px;
 }
 
 .section-child .section-1-left {
@@ -109,12 +147,6 @@ body {
 	background-color: white;
 	color: black;
 	transition: .3s;
-}
-
-.section-3 .section-child {
-  border: 1px solid blue;
-  display: flex;
-  flex-flow: row;
 }
 
 .scroll-next {

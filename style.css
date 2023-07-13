@@ -13,7 +13,7 @@ body {
 .section {
   width: 100%;
   height: 90vh;
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -44,7 +44,7 @@ body {
 .section.section-5.section-child,
 .section.section-6.section-child,
 .section.section-7.section-child {
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -68,9 +68,9 @@ body {
 .section-5 .section-5-child,
 .section-6 .section-6-child,
 .section-7 .section-7-child {
-  background-color: black;
+  background-color: #2f2f2f;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   padding: 50px;
   display: flex;
   flex-flow: column nowrap;
@@ -88,6 +88,7 @@ body {
 .section-7 .section-7-child svg {
   margin-bottom: 50px;
   margin-right: auto;
+  width: 250px;
 }
 
 .desc-cnt {
@@ -227,4 +228,44 @@ h3 {
   align-items: center;
   justify-content: center;
   background-color: #000;
+}
+
+.box {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }

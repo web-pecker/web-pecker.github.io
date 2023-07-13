@@ -43,13 +43,79 @@ body {
   height: 100%;
 }
 
-.section.section-3.section-child {
+.section.section-4.section-child, .section.section-5.section-child,
+.section.section-6.section-child,  .section.section-7.section-child{
     height: 90vh;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
     padding: 50px 0;
+}
+
+.section.section-4.section-child,
+.section.section-6.section-child {
+	padding-right: 20%;
+	padding-left: 0;
+}
+
+.section.section-5.section-child,
+.section.section-7.section-child {
+	padding-left: 20%;
+	padding-right: 0
+}
+
+.section-4 .section-4-child,
+.section-5 .section-5-child,
+.section-6 .section-6-child,
+.section-7 .section-7-child {
+	background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 0 15px 15px 0;
+}
+
+.section-5 .section-5-child,
+.section-7 .section-7-child {
+	border-radius: 15px 0 0 15px;
+}
+
+
+.section-4 .section-4-child svg,
+.section-5 .section-5-child svg,
+.section-6 .section-6-child svg,
+.section-7 .section-7-child svg {
+	margin-bottom: 50px;
+    margin-right: auto;
+}
+
+.desc-cnt {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	height: 100%;
+}
+
+.desc-cnt h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.desc-cnt .desc {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.section .section-5-child .desc-cnt .desc,
+.section .section-6-child .desc-cnt .desc,
+.section .section-7-child .desc-cnt .desc  {
+    line-height: 3;
 }
 
 .section-child .empty {

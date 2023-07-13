@@ -215,6 +215,10 @@ h3 {
   transition: 0.3s;
 }
 
+.section-child .section-1-right img {
+  border-radius: 15px;
+}
+
 .scroll-next {
   height: 10vh;
   margin-bottom: 1px;

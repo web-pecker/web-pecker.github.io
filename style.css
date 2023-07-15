@@ -142,10 +142,10 @@ h3 {
 
 .section-child .section-3-left,
 .section-3-right {
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px;
   background-color: #000;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   padding: 50px;
   display: flex;
   flex-flow: column nowrap;
@@ -164,10 +164,6 @@ h3 {
 
 .section-child .section-3-left .avail-cnt h3 {
   padding: 10px 0;
-}
-
-.section-child .section-3-right {
-  border-radius: 15px 0 0 15px;
 }
 
 .section-child .section-1-left {

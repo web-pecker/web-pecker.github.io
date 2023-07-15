@@ -50,6 +50,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 50px 0;
+  background-color: black;
 }
 
 .section.section-4.section-child,
@@ -68,18 +69,23 @@ body {
 .section-5 .section-5-child,
 .section-6 .section-6-child,
 .section-7 .section-7-child {
-  background-color: #2f2f2f;
   width: 100%;
   height: fit-content;
   padding: 50px;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 0 15px 15px 0;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .section-5 .section-5-child,
 .section-7 .section-7-child {
   border-radius: 15px 0 0 15px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .section-4 .section-4-child svg,
@@ -88,7 +94,7 @@ body {
 .section-7 .section-7-child svg {
   margin-bottom: 50px;
   margin-right: auto;
-  width: 250px;
+  width: 60%;
 }
 
 .desc-cnt {
@@ -111,6 +117,7 @@ body {
   height: 100%;
 }
 
+.section .section-4-child .desc-cnt .desc,
 .section .section-5-child .desc-cnt .desc,
 .section .section-6-child .desc-cnt .desc,
 .section .section-7-child .desc-cnt .desc {

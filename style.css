@@ -221,6 +221,7 @@ h3 {
 }
 
 .scroll-next {
+  height: 10vh;
   display: flex;
   flex-flow: row;
   align-items: center;
